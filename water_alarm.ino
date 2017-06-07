@@ -1,4 +1,4 @@
-#define PIN 13
+#define PIN 10
 #define VAL_PROBE 0
 
 #define ADC_MAX 1023

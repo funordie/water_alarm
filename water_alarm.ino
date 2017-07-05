@@ -25,7 +25,7 @@ void SetAlarm(bool newState) {
 
     //check for alarm period
     unsigned long ulTime = millis();
-    if(!newState || ((ulTime - ulStartTime) > ALARM_TIME_MS)) {
+    if((ulTime - ulStartTime) > ALARM_TIME_MS) {
         //stop alarm
         digitalWrite(PIN, false);
     }
